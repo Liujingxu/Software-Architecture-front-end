@@ -24,10 +24,12 @@
         </tbody>
     </table>
 
-    <button ng-click="isShow()">添加新用户</button>
+    <button ng-click="isShow()" class="layui-btn layui-btn-lg layui-btn-radius layui-btn-normal">添加新用户</button>
     <div ng-show="ishow">
-        <input type="text" ng-model="addName">
-        <button ng-click="addUser()">添加</button>
+        <form class="layui-form"><label class="layui-form-label">新用户</label>
+            <input type="text" class="layui-input-block" placeholder="请输入姓名" ng-model="addName">
+            <button ng-click="addUser()" class="layui-btn layui-btn-warm">添加</button>
+        </form>
     </div>
 
 </body>
