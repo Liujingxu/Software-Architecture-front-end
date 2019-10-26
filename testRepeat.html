@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="testController" ng-controller="ctrl2">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="angular.js"></script>
+    <link rel="stylesheet" href="node_modules/layui-src/dist/css/layui.css">
+    <script src="js/testController.js"></script>
+</head>
+<body>
+
+    <table class="layui-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="n in names">
+                <td>{{n.id}}</td>
+                <td>{{n.name}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

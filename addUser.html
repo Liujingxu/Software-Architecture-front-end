@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="addUserApp" ng-controller="addCtrl">
+<head>
+    <meta charset="UTF-8">
+    <title>添加用户</title>
+    <link rel="stylesheet" href="node_modules/layui-src/dist/css/layui.css">
+    <script src="angular.js"></script>
+    <script src="js/addController.js"></script>
+</head>
+<body>
+
+    <table class="layui-table">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>姓名</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="(index, user) in users">
+            <td>{{index}}</td>
+            <td>{{user}}</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <button ng-click="isShow()">添加新用户</button>
+    <div ng-show="ishow">
+        <input type="text" ng-model="addName">
+        <button ng-click="addUser()">添加</button>
+    </div>
+
+</body>
+</html>

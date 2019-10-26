@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="testController" ng-controller="ctrl">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="angular.js"></script>
+    <link rel="stylesheet" href="node_modules/layui-src/dist/css/layui.css">
+    <script src="js/testController.js"></script>
+</head>
+<body>
+    <form class="layui-form">
+        <div class="layui-form-item">
+            <label class="layui-form-label">姓</label>
+            <div class="layui-input-block">
+                <input type="text" class="layui-input" ng-model="firstName">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">姓</label>
+            <div class="layui-input-block">
+                <input type="text" class="layui-input" ng-model="lastName">
+            </div>
+        </div>
+    </form>
+
+    <strong>{{firstName + lastName}}</strong>
+
+</body>
+</html>
